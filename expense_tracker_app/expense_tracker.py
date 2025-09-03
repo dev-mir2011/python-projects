@@ -4,7 +4,7 @@ from datetime import datetime
 import pandas as pd
 from matplotlib import pyplot as plt
 
-df = pd.read_csv("expenses.csv")
+df = pd.read_csv(r"C:\Users\Ruhaan Mir\Desktop\software development\Python\git-projects\expense_tracker_app\expenses.csv")
 
 def submit_date():
     date_str = di.get()
@@ -12,9 +12,17 @@ def submit_date():
         # Parse date in DD/MM/YYYY format
         valid_date = datetime.strptime(date_str, "%d/%m/%Y")
         #elements
+        df.insert(valid_date,0)
+        dit.pack_forget()
+        di.pack_forget()
+        nb.pack_forget()
+        et.pack()
+        ee.pack()
+        nb1.pack()
+        db.pack()
     
     except:
-        root.config(bg='grey')
+        nb.config(fg="red")
 
 
 def data_screen():
