@@ -6,7 +6,7 @@ ip_res = requests.get("https://ipinfo.io")
 ip_data = ip_res.json()
 lat, lon = ip_data["loc"].split(",")
 
-API_KEY = "ecec60d27fc9fcc3311206990005b8d1"
+API_KEY = "YOUR_API_KEY"
 city = "London"
 url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric"
 
