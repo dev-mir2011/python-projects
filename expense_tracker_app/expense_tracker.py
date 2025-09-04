@@ -5,7 +5,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import os
 
-FILENAME = r"C:\Users\Ruhaan Mir\Desktop\software development\Python\git-projects\expense_tracker_app\expenses.csv"
+FILENAME = r"YOUR_FILE_PATH"
 
 
 class functions:
