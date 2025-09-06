@@ -145,6 +145,7 @@ class functions:
      plt.show()
  
  def add_another_value():
+     di.delete(0,END)
      t1.pack_forget()
      p1.pack_forget()
      gb.pack_forget()
