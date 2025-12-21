@@ -8,57 +8,21 @@ These projects focus on **problem-solving, clean logic, and understanding how so
 
 ## Projects
 
-### Blog App (Authentication)
-- User login system
-- Create and manage blog posts
-- Backend-focused web development
+1. ### Blog App (Authentication)
 
-**Tech:** Python, Flask
+   - User login system
+   - Create and manage blog posts
+   - Full-Stack focused web development
 
----
+**Tech:** Python, Flask, React
 
-### Expense Tracker (CSV Storage)
-- Track daily expenses
-- Persistent storage using CSV files
-- File handling and data management
+1. ### URL Shortener
 
-**Tech:** Python
+   - URL Shortening system
+   - Create short URL's
+   - Backend-focused web development
 
----
-
-### Weather App (Tkinter GUI)
-- GUI-based weather application
-- Event-driven programming
-- Displays weather information to users
-
-**Tech:** Python, Tkinter
-
----
-
-### Guess The Number Game (Tkinter)
-- Interactive GUI game
-- Random number generation
-- User input handling
-
-**Tech:** Python, Tkinter
-
----
-
-### CLI Calculator
-- Command-line based calculator
-- Supports basic arithmetic operations
-- Focus on clean logic and input validation
-
-**Tech:** Python
-
----
-
-### To-Do List Web App
-- Create, update, and delete tasks
-- Web-based interface
-- Backend built using Flask
-
-**Tech:** Python, Flask
+**Tech:** Python, Flask, React
 
 ---
 
