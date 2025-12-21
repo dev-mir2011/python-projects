@@ -29,15 +29,17 @@ python-projects/
 │   ├── static/
 │   └── templates/
 │
-└── URL-Shorterner/
-    ├── Flask-Backend/
-    └── url-shortener-frontend/
-        ├── public/
-        └── src/
-            ├── assets/
-            └── components/
-                └── views/
-
+├──  URL-Shorterner/
+|    ├── Flask-Backend/
+|    └── url-shortener-frontend/
+|        ├── public/
+|        └── src/
+|            ├── assets/
+|            └── components/
+|                └── views/
+├── CLI-Calculator/
+├── weather-app/
+└── guess-the-number-game/
 ```
 
 ## Projects Overview
