@@ -210,5 +210,4 @@ Command Line interface calculator
 
 # Author
 
-`Ruhaan Mir`
-Learning Python, Web Development, and Software Engineering
+`Ruhaan Mir` Learning Python, Web Development, and Software Engineering
