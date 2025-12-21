@@ -15,7 +15,7 @@ To-Do-List_web_app/
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python
 - Flask
