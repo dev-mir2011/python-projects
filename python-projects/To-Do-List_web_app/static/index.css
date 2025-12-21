@@ -1,0 +1,50 @@
+h1{
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 350%;
+
+}
+
+body{
+
+    background-color: midnightblue;
+}
+
+li{
+    
+    color: white;
+    font-size: 150%;
+}
+
+a{
+
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+button{
+
+
+    background-color: midnightblue;
+    color: white;
+    border: solid 0px black;
+    padding-left: 10px;
+    font-size: 100%;
+
+
+}
+
+#at{
+
+    font-size: 250%;
+    border: solid 3px black;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}

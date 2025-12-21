@@ -1,0 +1,14 @@
+.pencil-button{
+    font-size: 1.5rem;
+    color: var(--blue);
+    display: inline;
+    cursor: pointer;
+}
+
+.pencil-button-container{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    display: inline;
+    cursor: pointer;
+}

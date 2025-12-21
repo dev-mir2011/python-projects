@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Tasks{% endblock %}
+{% block css %}/index.css{% endblock %}
+
+{% block content %}
+
+<h1>Tasks</h1>
+
+<a href="{{url_for('create')}}"  id="at">+ Add Task</a><br><br><br>
+
+<ol>
+
+
+{% for task in tasks %} 
+
+<li>{{task.task}}<button onclick="deleteTask({{task.pid}})">Done</button><a href="{{url_for('update', pid=task.pid)}}">Update</a></li>
+
+{% endfor %}
+
+</ol>
+
+<script type="text/javascript">
+
+function deleteTask(pid){
+
+fetch('{{url_for("delete", pid=pid)}}'+pid, {
+
+    method: 'DELETE'
+
+}).then(response =>{
+
+    if (response.ok){
+
+        window.location.reload();
+    } else{
+
+        console.error('Failed to delete the specified item with pid', pid);
+    }
+})
+
+.catch(error => {
+   
+    console.error('Error during fetching:', error);
+
+})
+
+}
+
+
+
+
+</script>
+
+
+{% endblock %}

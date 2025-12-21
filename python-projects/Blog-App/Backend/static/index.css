@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+}
+
+.api-docs {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ===============================
+   Headings
+=============================== */
+.api-docs h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    color: #F8FAFC;
+}
+
+.api-docs h2 {
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #334155; /* Slate border */
+    display: inline-block;
+    color: #E2E8F0;
+}
+
+.api-docs h3 {
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #E2E8F0;
+}
+
+/* ===============================
+   Text & Lists
+=============================== */
+.api-docs p {
+    margin: 12px 0;
+    color: #CBD5E1;
+}
+
+.api-docs ul,
+.api-docs ol {
+    text-align: left;
+    margin: 15px auto 0 auto;
+    padding-left: 20px;
+    max-width: 650px;
+    color: #CBD5E1;
+}
+
+/* ===============================
+   Inline Code
+=============================== */
+.api-docs code {
+    background: #1E293B; /* dark slate */
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-style: italic;
+    font-family: "Courier New", monospace;
+    color: #F8FAFC;
+}
+
+/* ===============================
+   Code Blocks
+=============================== */
+.api-docs pre {
+    background: #1E293B;
+    padding: 14px 18px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 700px;
+    border: 1px solid #334155;
+    color: #E2E8F0;
+}
+
+/* ===============================
+   Tables
+=============================== */
+.api-docs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95rem;
+    color: #E2E8F0;
+}
+
+.api-docs th,
+.api-docs td {
+    padding: 12px;
+    border: 1px solid #334155; /* dark Slate */
+    text-align: left;
+}
+
+.api-docs th {
+    background: #1E293B;
+    font-weight: bold;
+}
+
+/* ===============================
+   Divider
+=============================== */
+.api-docs hr {
+    margin: 50px auto;
+    height: 5px;
+    border: none;
+    border-top: 1px solid #334155;
+}
+
+/* ===============================
+   Special Highlight (Your Branding)
+=============================== */
+.NAME {
+    color: #00FF99;
+}

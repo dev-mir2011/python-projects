@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form id="createUserForm">
+        <h2>Create User : </h2>
+        <input type="text" placeholder="Username" id="username" required><br>
+        <input type="email" placeholder="Email" id="email" required><br>
+        <input type="password" placeholder="Password" id="password" required><br>
+        <input type="submit" value="Create">
+    </form>
+
+    <form id="createPostForm">
+        <h2>Create Post : </h2>
+        <textarea id="content" placeholder="Blog content in .md"></textarea><br>
+        <input type="submit" value="Create">
+    </form>
+
+    <form id="updatePostForm">
+        <h2>Update Post : </h2>
+        <input type="number" id="pidu" placeholder="Post ID"><br>
+        <textarea id="contentu" placeholder="Blog content in .md"></textarea><br>
+        <input type="submit" value="Update">
+    </form>
+
+
+    <form id="loginForm">
+        <h2>Login : </h2>
+        <input type="text" placeholder="Username or email" id="usernamel" required><br>
+        <input type="password" placeholder="Password" id="passwordl" required><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <form id="updateForm">
+        <h2>Update : </h2>
+        <input type="text" placeholder="Username" id="usernameu" required><br>
+        <input type="password" placeholder="Password" id="passwordu" required><br>
+        <input type="email" placeholder="Email" id="emailu" required><br>
+        <input type="submit" value="Update">
+    </form>
+
+    <button id="logout">logout</button><br>
+
+    <button id="delete">Delete Current User</button><br>
+
+    <button onclick="getBlogs()">GET ALL BLOGS</button>
+
+    <h2>Delete Post : </h2>
+    <input type="number" placeholder="Post ID" id="pid"><br>
+    <button onclick="deletePost()">Delete Post</button><br>
+    <button onclick="postGET()">View Post</button><br>
+
+
+
+    <button onclick="userDataGET()">GET Current User data</button><br>
+
+
+    <button onclick="usersGET()">GET users</button><br>
+
+    <h2>Get Author Data: </h2>
+    <input type="number" placeholder="User ID" id="uid"><br>
+    <button onclick="authorGET()">Get User Data</button><br>
+    <button onclick="getCurrentUserBlogs()">Get Current User Blogs</button><br>
+
+    <script src="./main.js"></script>
+</body>
+</html>

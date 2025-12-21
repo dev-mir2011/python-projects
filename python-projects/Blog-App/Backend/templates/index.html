@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+{% block CSSLink %}index.css{% endblock %}
+
+{% block content %}
+
+<section>
+  <h1>Welcome to the <span class="NAME">MirX API</span></h1>
+  <p>Your lightweight, fast, and secure backend for publishing, managing, and delivering blog content.</p>
+  <p>
+    Whether you're building a personal blog, news platform, or a full-scale content application,
+    the Blog API gives you the tools to create, update, and manage posts with ease.
+  </p>
+
+  <h2>Why Use This API?</h2>
+  <ul>
+    <li>Perfect for blogs, portfolios, SaaS dashboards, and content apps</li>
+    <li>Extremely easy to integrate with React, Next.js, Vue, or mobile apps</li>
+    <li>Designed to be extendable — add comments, likes, admin roles, analytics, etc.</li>
+  </ul>
+</section>
+
+<section class="api-docs">
+
+  <h1>MirX API Documentation</h1>
+  <p>Your lightweight backend for creating, managing, and delivering blog content.</p>
+
+  <hr>
+
+  <h2>Authentication</h2>
+  <p>MirX API uses <strong>session-based authentication</strong>. Public routes are open, while protected routes require login.</p>
+
+  <hr>
+
+  <h2>Public Routes</h2>
+
+  <h3>GET /</h3>
+  <p>Returns the main landing page.</p>
+
+  <h3>GET /users</h3>
+  <p>Fetch all registered users.</p>
+  <pre><code>[
+  { "username": "john", "User_ID": 1 },
+  { "username": "alex", "User_ID": 2 }
+]</code></pre>
+
+  <h3>POST /create_user</h3>
+  <p>Create a new user.</p>
+  <p><strong>Request Body:</strong></p>
+  <pre><code>{
+  "username": "example",
+  "password": "123456",
+  "email": "a@mail.com"
+}</code></pre>
+
+  <h3>GET /get_author_data/&lt;id&gt;</h3>
+  <p>Fetch profile information for a specific blogger.</p>
+  <pre><code>{
+  "username": "ruhaan",
+  "email": "r@example.com"
+}</code></pre>
+
+  <h3>GET /all_blogs</h3>
+  <p>Fetch all blog posts.</p>
+
+  <h3>GET /blog/&lt;id&gt;</h3>
+  <p>Fetch a single post using its ID.</p>
+
+  <hr>
+
+  <h2>Authenticated Routes</h2>
+
+  <h3>POST /login</h3>
+  <p>Log in using username or email.</p>
+  <pre><code>{
+  "username_or_email": "example",
+  "password": "123456"
+}</code></pre>
+
+  <h3>POST /logout</h3>
+  <p>Logs the current user out.</p>
+
+  <h3>GET /user_data</h3>
+  <p>Returns data for the logged-in user.</p>
+
+  <h3>DELETE /delete_user</h3>
+  <p>Deletes the current user and all their posts.</p>
+
+  <h3>PATCH /update_user</h3>
+  <p>Update username, email, or password.</p>
+  <pre><code>{
+  "username": "newname",
+  "password": "newpass",
+  "email": "new@mail.com"
+}</code></pre>
+
+  <hr>
+
+  <h2>Post Routes (Authenticated)</h2>
+
+  <h3>POST /create_post</h3>
+  <p>Create a new blog post.</p>
+  <pre><code>{ "content": "This is my new post" }</code></pre>
+
+  <h3>DELETE /delete_post/&lt;pid&gt;</h3>
+  <p>Delete a post owned by the current user.</p>
+
+  <h3>PATCH /update_post/&lt;pid&gt;</h3>
+  <p>Update a post owned by the current user.</p>
+  <pre><code>{ "content": "Updated content here" }</code></pre>
+
+  <hr>
+
+  <h2>Summary</h2>
+
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>Method</th><th>Route</th><th>Auth</th><th>Description</th>
+    </tr>
+    <tr><td>GET</td><td>/</td><td>No</td><td>Landing page</td></tr>
+    <tr><td>GET</td><td>/users</td><td>No</td><td>Fetch all users</td></tr>
+    <tr><td>POST</td><td>/create_user</td><td>No</td><td>Register user</td></tr>
+    <tr><td>GET</td><td>/get_author_data/:id</td><td>No</td><td>Get a blogger's profile</td></tr>
+    <tr><td>GET</td><td>/all_blogs</td><td>No</td><td>Fetch all posts</td></tr>
+    <tr><td>GET</td><td>/blog/:id</td><td>No</td><td>Fetch single post</td></tr>
+    <tr><td>POST</td><td>/login</td><td>No</td><td>Log in</td></tr>
+    <tr><td>POST</td><td>/logout</td><td>No</td><td>Log out</td></tr>
+    <tr><td>GET</td><td>/user_data</td><td>Yes</td><td>Logged-in user info</td></tr>
+    <tr><td>DELETE</td><td>/delete_user</td><td>Yes</td><td>Delete user + posts</td></tr>
+    <tr><td>PATCH</td><td>/update_user</td><td>Yes</td><td>Update user account</td></tr>
+    <tr><td>POST</td><td>/create_post</td><td>Yes</td><td>Create blog post</td></tr>
+    <tr><td>DELETE</td><td>/delete_post/:pid</td><td>Yes</td><td>Delete post</td></tr>
+    <tr><td>PATCH</td><td>/update_post/:pid</td><td>Yes</td><td>Update post</td></tr>
+  </table>
+
+</section>
+
+
+{% endblock %}

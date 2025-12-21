@@ -1,0 +1,15 @@
+.trash-button{
+    font-size: 1.5rem;
+    color: #ff0000;
+    display: inline;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.trash-button-container{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    display: inline;
+    cursor: pointer;
+}

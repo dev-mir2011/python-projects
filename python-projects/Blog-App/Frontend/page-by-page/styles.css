@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+    background-color: var(--background);
+    color: var(--white);
+    text-align: center;
+}
+
+h1{
+    font-family: Poppins;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+:root{
+    --blue:#38BDF8;
+    --grey:#777777;
+    --white:#ffffff;
+    --black:#000000;
+    --background:#0F172A;
+
+}
+
+.white{
+    color: var(--white);
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.grey{
+    color: var(--grey);
+}
+
+.top-to-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.left-to-right{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 50vw;
+    border-radius: 50px;
+}
+
+.image > img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+section{
+    position: relative;
+}
+
+.hero{
+    margin-top: 70px;
+    height: 100vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero > hr{
+    width: 85%;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.features > hr{
+    width: 85%;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.wab{
+    color: var(--white);
+    background-color: var(--blue);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+.wabl{
+    color: var(--black);
+    background-color: var(--white);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
