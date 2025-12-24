@@ -36,7 +36,7 @@ To-Do-List_web_app/
 ## How to Run
 
 ```bash
-python app.py
+python run.py
 ```
 
 - ### Open in browser
